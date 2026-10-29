@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - /bin/mkdir -p /home/firstcla/public_html
+    - /usr/bin/find . -maxdepth 1 -type f \( -name '*.html' -o -name '*.css' -o -name '*.js' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' -o -name '*.svg' -o -name '*.webp' -o -name '*.ico' -o -name 'robots.txt' -o -name 'sitemap.xml' \) -exec /bin/cp -f -- {} /home/firstcla/public_html/ \;
