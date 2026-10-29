@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Installation Agreement | First Class Filtration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary:   #0a1628;
+      --bg-secondary: #0d1f35;
+      --bg-footer:    #060d1a;
+      --gold:         #c9a96e;
+      --gold-border:  rgba(201,169,110,0.22);
+      --white:        #ffffff;
+      --body:         #7a95aa;
+      --muted:        #8fa0b0;
+      --footer-text:  #3d5570;
+      --font: 'Inter', system-ui, -apple-system, sans-serif;
+      --max: 760px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); background: var(--bg-primary); color: var(--white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { opacity: .8; }
+
+    nav {
+      background: var(--bg-primary);
+      border-bottom: 1px solid var(--gold-border);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky; top: 0; z-index: 99;
+    }
+    .nav-logo img { height: 48px; width: auto; display: block; }
+    .nav-back {
+      font-size: 13px; color: var(--muted);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .nav-back svg { width: 16px; height: 16px; stroke: var(--muted); fill: none; stroke-width: 2; }
+    .nav-back:hover { color: var(--white); }
+    .nav-back:hover svg { stroke: var(--white); }
+
+    .page-header {
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--gold-border);
+      padding: 56px 24px 48px;
+      text-align: center;
+    }
+    .page-header .eyebrow {
+      display: inline-block;
+      font-size: 11px; letter-spacing: 2.5px;
+      color: var(--gold); text-transform: uppercase; margin-bottom: 14px;
+    }
+    .page-header h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 500; }
+    .page-header .meta { font-size: 13px; color: var(--footer-text); margin-top: 10px; }
+
+    .content {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+    }
+    .notice {
+      background: var(--bg-secondary);
+      border: 1px solid var(--gold-border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 48px;
+    }
+    .notice strong { color: var(--gold); }
+    h2 {
+      font-size: 18px; font-weight: 500;
+      color: var(--white);
+      margin: 40px 0 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--gold-border);
+    }
+    h2:first-of-type { margin-top: 0; }
+    h3 { font-size: 15px; font-weight: 500; color: var(--white); margin: 22px 0 8px; }
+    p { color: var(--body); font-size: 14px; margin-bottom: 14px; }
+    ul { color: var(--body); font-size: 14px; padding-left: 20px; margin-bottom: 14px; }
+    ul li { margin-bottom: 6px; }
+    .contact-block {
+      background: var(--bg-secondary);
+      border: 1px solid var(--gold-border);
+      border-radius: 10px;
+      padding: 24px;
+      margin-top: 48px;
+      font-size: 14px;
+      color: var(--body);
+    }
+    .contact-block strong { color: var(--white); display: block; margin-bottom: 8px; font-size: 15px; }
+
+    .ack {
+      background: var(--bg-secondary);
+      border: 1px solid var(--gold-border);
+      border-radius: 10px;
+      padding: 24px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: var(--body);
+    }
+    .ack strong { color: var(--gold); }
+    .sign-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px 32px;
+      margin-top: 28px;
+    }
+    @media (max-width: 560px) { .sign-grid { grid-template-columns: 1fr; } }
+    .sign-line { border-bottom: 1px solid var(--gold-border); height: 40px; margin-bottom: 6px; }
+    .sign-label { font-size: 12px; color: var(--footer-text); letter-spacing: .4px; }
+
+    footer {
+      background: var(--bg-footer);
+      border-top: 1px solid var(--gold-border);
+      padding: 28px 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--footer-text);
+    }
+    footer a { color: var(--footer-text); margin: 0 10px; }
+    footer a:hover { color: var(--muted); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="FCF-logo-cropped.png" alt="First Class Filtration">
+    </a>
+    <a href="index.html" class="nav-back">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to home
+    </a>
+  </nav>
+
+  <div class="page-header">
+    <span class="eyebrow">Legal</span>
+    <h1>Installation Agreement</h1>
+    <p class="meta">Terms &amp; Conditions for the purchase and installation of a First Class Filtration system &nbsp;·&nbsp; Last updated: 17 June 2026</p>
+  </div>
+
+  <div class="content">
+
+    <div class="notice">
+      <strong>Important notice.</strong> These Terms and Conditions form a legal and binding agreement between you and First Class Filtration (First Class Filtration Pty Ltd, ABN 68 687 042 093). Please read them thoroughly before signing. By signing this agreement — whether in person with one of our agents or remotely on your own — you confirm that you have read, understood, and agree to be bound by these Terms and Conditions. This is a template; we recommend it be reviewed by a qualified Australian legal professional before use.
+    </div>
+
+    <h2>1. About this agreement</h2>
+    <p>These Terms and Conditions ("Terms and Conditions" or "this Agreement") form a legal and binding agreement between you and First Class Filtration (First Class Filtration Pty Ltd, ABN 68 687 042 093) ("First Class Filtration", "FCF", "we", "us" or "our").</p>
+    <p>Any reference to "you" or "your" refers to the customer named on this Agreement who is purchasing the supply and installation of a First Class Filtration water filtration system.</p>
+    <p>This Agreement may be presented to you and signed in person with one of our agents on a tablet, or sent to you to review and sign remotely via a secure link. In either case, the Terms and Conditions are identical and apply equally.</p>
+    <p>First Class Filtration may amend these Terms and Conditions from time to time. The version you sign at the time of purchase governs your purchase and is recorded as part of your signed agreement.</p>
+
+    <h2>2. Capacity to enter into this Agreement</h2>
+    <p>The goods and services described in this Agreement are only available for purchase by persons who have the legal capacity to enter into a binding contract. They are not available to any person under the age of 18 years, nor to any person who does not otherwise have the capacity to enter into a legally binding contract.</p>
+    <p>By signing this Agreement you confirm that you are at least 18 years of age and have the authority to authorise the installation at the nominated installation address.</p>
+
+    <h2>3. What we supply and install (scope of works)</h2>
+    <p>Subject to a site assessment, First Class Filtration agrees to supply and professionally install one (1) First Class Filtration whole-home inline water filtration system at the installation address specified on this Agreement. A standard installation includes:</p>
+    <ul>
+      <li>A 2mm 316 marine-grade stainless steel backing plate and external cover, powder coated to your selected colour;</li>
+      <li>A copper and brass valve train and bypass assembly, brazed with silver solder;</li>
+      <li>A two-stage filter assembly — a stepped 25 to 5 micron sediment filter and a 1 micron carbon chloraguard filter;</li>
+      <li>Connection to your main water line by a licensed plumber; and</li>
+      <li>The initial set of filter cartridges.</li>
+    </ul>
+    <p>The installation address, your selected cover colour, and the agreed installation location on your property are recorded on this Agreement and form part of it.</p>
+
+    <h2>4. Site assessment and suitability</h2>
+    <p>All installations are subject to a site assessment. We reserve the right to decline an installation, or to vary the scope and price, where a site is found to be unsuitable, or where unforeseen site conditions are identified before or during installation. Where we identify such conditions, we will inform you before proceeding, and you may elect not to continue (see clause 14 — Cooling-off and cancellation).</p>
+
+    <h2>5. Pricing</h2>
+    <p>The total installation price is the amount stated on this Agreement. All prices are in Australian Dollars (AUD) and are inclusive of Goods and Services Tax (GST) applied at the rate of 10%, unless otherwise stated.</p>
+    <p>In some circumstances there may be additional costs involved in the installation of the system by our licensed plumbers. You will be informed of any additional charges before installation commences, and should you elect not to proceed, we will refund any monies already paid to us in respect of the cancelled installation.</p>
+    <p>Installations that may incur additional fees include, but are not limited to, those requiring extended pipe runs, difficult or restricted access, roof or sub-floor plumbing, or other non-standard works. Any such additional amount must be paid on or before installation, unless otherwise agreed in writing.</p>
+    <p>It is your responsibility to pay any other taxes, duties, levies or charges that may be imposed by any governmental agency in respect of the goods or services supplied under this Agreement.</p>
+
+    <h2>6. Changes to pricing</h2>
+    <p>We make every effort to ensure that pricing is correct. If the price of your installation changes after this Agreement is quoted — for example, because the scope of work changes following the site assessment — we will contact you to advise of the change and to obtain your agreement before proceeding. Should you not wish to proceed, we will refund any monies already paid to us in respect of the cancelled installation.</p>
+
+    <h2>7. Payment options</h2>
+    <p>You may pay for your installation by one of the following methods, as selected on this Agreement:</p>
+
+    <h3>Option A — Payment in full</h3>
+    <p>Payment of the total installation price is due on the day your installation is completed, unless otherwise stated on this Agreement. We will provide a tax invoice on completion, and payment may be made by bank transfer (EFT) or BPAY using the details on the invoice, or by another method we agree to in writing.</p>
+
+    <h3>Option B — Payment by instalments</h3>
+    <p>Where you elect to pay by instalments, you authorise First Class Filtration to charge the instalment amounts to your nominated VISA or MasterCard, in the amounts and at the times set out on this Agreement. By choosing this option you authorise these amounts to be charged automatically to that card until the total installation price has been paid in full.</p>
+    <p>You are responsible for ensuring that your nominated card remains valid and has sufficient funds available on each scheduled instalment date. If an instalment cannot be processed, we may contact you to arrange payment, and any reasonable costs we incur as a result of a failed payment may be passed on to you. Title in the goods does not pass to you until the total price has been paid in full (see clause 10 — Risk and title).</p>
+
+    <h3>Late payments</h3>
+    <p>We know things can occasionally slip, so we allow a short grace period. Payment is due on the day of installation, and if it has not reached us within 7 days of that date, a one-off late payment fee of $[insert amount] may be added to your account. If an amount stays unpaid after that, we may pause any further services until it is settled, and you agree to cover the reasonable costs we incur in recovering it (such as debt-collection or legal costs). We would always rather sort things out with a quick phone call first, so please get in touch if you are having any trouble paying on time.</p>
+
+    <h2>8. Installation, access and site conditions</h2>
+    <p>Installations are carried out by licensed plumbers in accordance with South Australian regulations and applicable Australian Standards. We will endeavour to complete the installation in a single visit; however, completion time may vary depending on site conditions. We give no warranty as to the exact time or duration of installation.</p>
+    <p>You are responsible for providing clear and safe access to the water meter and the agreed installation location on the scheduled date, and for ensuring the installation area is clear. If access cannot be provided, we may need to reschedule, and a rebooking or call-out fee may apply.</p>
+    <p>We are not responsible for pre-existing faults in your plumbing that are identified during or after installation.</p>
+
+    <h2>9. Cover colour</h2>
+    <p>Your external cover is powder coated to the colour you select and record on this Agreement. Custom colours are available on request and may be subject to additional cost and lead time. Minor variation between a colour sample or swatch and the finished powder-coated cover is normal and is not considered a defect.</p>
+
+    <h2>10. Risk and title</h2>
+    <p>Risk in the goods supplied under this Agreement passes to you upon installation. Title in the goods remains with First Class Filtration until payment for all goods and services supplied under this Agreement has been received by us in full and in cleared funds.</p>
+
+    <h2>11. Warranties</h2>
+    <p>The stainless steel powder-coated external cover is warranted for the lifetime of the product against defects in materials and workmanship.</p>
+    <p>The filter components and fittings are warranted for 12 months from the date of installation against defects in materials and workmanship. We will repair or replace defective components covered by this warranty at no charge during the warranty period.</p>
+    <p>These warranties do not cover any defect, damage, fault or malfunction that we determine, acting reasonably, to be due to: damage by you or a third party (including accident, misuse, abuse, neglect, vandalism, alteration or modification); normal wear and tear; failure to follow our instructions for use or maintenance; repairs, maintenance or modifications carried out by a person who is not an authorised First Class Filtration serviceman, or the fitting of non-approved parts; or events outside our control such as flood, storm, fire, or extreme weather.</p>
+
+    <h2>12. Australian Consumer Law</h2>
+    <p>Our goods and services come with guarantees that cannot be excluded under the Australian Consumer Law. You are entitled to a replacement or refund for a major failure, and to compensation for any other reasonably foreseeable loss or damage. You are also entitled to have goods repaired or replaced if they fail to be of acceptable quality and the failure does not amount to a major failure. Nothing in this Agreement limits or excludes any rights you have under the Australian Consumer Law.</p>
+    <p>If you consider there is a manufacturer's fault or defect in any goods supplied to you, please notify us promptly so we can minimise any further damage and arrange inspection. Subject to your rights under the Australian Consumer Law, and at our election, we may repair the defective goods, replace them with an equivalent item, or offer a similar item or a refund where repair or replacement is not possible.</p>
+
+    <h2>13. Filter change service</h2>
+    <p>Filter cartridges require periodic replacement, approximately every 100,000 litres of household water use. We will notify you via the FCF app when a filter change is due. Filter change services are charged separately at the current service rate, which will be confirmed before the service is booked. Our technicians can complete a filter change without you being home, provided safe access to the system is available.</p>
+
+    <h2>14. Cooling-off and cancellation</h2>
+    <p>You may change your mind and cancel this Agreement for any reason, without penalty, within 10 business days of signing. If you cancel during this cooling-off period, you will be offered a full refund of any monies paid, less any fees charged to us by our bank to process the refund.</p>
+    <p>Where goods costing $500 or less are supplied to you during the cooling-off period at your request, this does not affect your right to cancel.</p>
+    <p>Outside the cooling-off period, cancellations made more than 48 hours before the scheduled installation date will incur no charge. Cancellations made within 48 hours of the scheduled installation, or failure to provide access on the day, may incur a call-out fee as advised to you.</p>
+
+    <h2>15. Limitation of liability</h2>
+    <p>To the maximum extent permitted by law, and except as expressly stated in this Agreement and as required by the Australian Consumer Law, First Class Filtration excludes all liability for any indirect, incidental, special or consequential loss, loss of profits, or loss of opportunity arising in connection with the goods and services supplied under this Agreement.</p>
+    <p>To the extent we are not able to exclude liability under law, our liability is limited, at our election, to: re-supplying the goods or services; refunding the applicable portion of the amount paid by you; or paying the cost of acquiring equivalent goods or services. Nothing in this clause limits any rights you have under the Australian Consumer Law that cannot lawfully be excluded.</p>
+
+    <h2>16. Privacy</h2>
+    <p>We collect and handle your personal information in accordance with the First Class Filtration Privacy Policy, available on our website. By signing this Agreement you consent to your information being used as described in that policy, including to arrange and carry out your installation and ongoing service.</p>
+
+    <h2>17. General</h2>
+    <p>If any part of these Terms and Conditions is found to be invalid or unenforceable, that part will be read down or, if necessary, severed, and the remainder of the Agreement will continue in full force and effect.</p>
+    <p>First Class Filtration may subcontract the supply and installation of goods and services under this Agreement.</p>
+    <p>This Agreement constitutes the entire agreement between you and First Class Filtration in respect of your installation and may not be varied except in writing agreed by us.</p>
+    <p>This Agreement is governed by the laws of the State of South Australia and the Commonwealth of Australia. You agree to submit to the non-exclusive jurisdiction of the courts of South Australia and the courts which hear appeals from them.</p>
+
+    <h2>18. Your acceptance</h2>
+    <p>By signing below — whether in person with a First Class Filtration agent or remotely via a secure link — you confirm that you:</p>
+    <ul>
+      <li>have the capacity to enter into a legally binding contract;</li>
+      <li>have read and understood these Terms and Conditions, including our Privacy Policy; and</li>
+      <li>accept and agree to be bound by these Terms and Conditions.</li>
+    </ul>
+
+    <div class="ack">
+      <strong>Acknowledgement &amp; signatures</strong>
+      <div class="sign-grid">
+        <div>
+          <div class="sign-line"></div>
+          <div class="sign-label">Customer name</div>
+        </div>
+        <div>
+          <div class="sign-line"></div>
+          <div class="sign-label">Installation address</div>
+        </div>
+        <div>
+          <div class="sign-line"></div>
+          <div class="sign-label">Customer signature</div>
+        </div>
+        <div>
+          <div class="sign-line"></div>
+          <div class="sign-label">Date</div>
+        </div>
+        <div>
+          <div class="sign-line"></div>
+          <div class="sign-label">First Class Filtration representative</div>
+        </div>
+        <div>
+          <div class="sign-line"></div>
+          <div class="sign-label">Date</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-block">
+      <strong>First Class Filtration</strong>
+      First Class Filtration Pty Ltd<br>
+      Email: hello@firstclassfiltration.com.au<br>
+      Phone: 08 XXXX XXXX<br>
+      Address: 757 Port Rd, Woodville SA 5011, South Australia<br>
+      ABN: 68 687 042 093
+    </div>
+
+  </div>
+
+  <footer>
+    <p style="margin-bottom:10px;">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="warranty-policy.html">Warranty Policy</a>
+    </p>
+    <p>&copy; 2025 First Class Filtration. All rights reserved. South Australia.</p>
+  </footer>
+
+</body>
+</html>

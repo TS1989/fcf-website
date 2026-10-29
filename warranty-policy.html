@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warranty Policy | First Class Filtration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary:   #0a1628;
+      --bg-secondary: #0d1f35;
+      --bg-footer:    #060d1a;
+      --gold:         #c9a96e;
+      --gold-border:  rgba(201,169,110,0.22);
+      --white:        #ffffff;
+      --body:         #7a95aa;
+      --muted:        #8fa0b0;
+      --footer-text:  #3d5570;
+      --font: 'Inter', system-ui, -apple-system, sans-serif;
+      --max: 760px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); background: var(--bg-primary); color: var(--white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { opacity: .8; }
+
+    nav {
+      background: var(--bg-primary);
+      border-bottom: 1px solid var(--gold-border);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky; top: 0; z-index: 99;
+    }
+    .nav-logo img { height: 48px; width: auto; display: block; }
+    .nav-back {
+      font-size: 13px; color: var(--muted);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .nav-back svg { width: 16px; height: 16px; stroke: var(--muted); fill: none; stroke-width: 2; }
+    .nav-back:hover { color: var(--white); }
+    .nav-back:hover svg { stroke: var(--white); }
+
+    .page-header {
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--gold-border);
+      padding: 56px 24px 48px;
+      text-align: center;
+    }
+    .page-header .eyebrow {
+      display: inline-block;
+      font-size: 11px; letter-spacing: 2.5px;
+      color: var(--gold); text-transform: uppercase; margin-bottom: 14px;
+    }
+    .page-header h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 500; }
+    .page-header .meta { font-size: 13px; color: var(--footer-text); margin-top: 10px; }
+
+    .content {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+    }
+    .notice {
+      background: var(--bg-secondary);
+      border: 1px solid var(--gold-border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 48px;
+    }
+    .notice strong { color: var(--gold); }
+
+    /* Warranty summary cards */
+    .warranty-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    .warranty-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--gold-border);
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .warranty-card .label {
+      font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--footer-text); display: block; margin-bottom: 8px;
+    }
+    .warranty-card .value {
+      font-size: 22px; font-weight: 500; color: var(--gold);
+      display: block; margin-bottom: 4px;
+    }
+    .warranty-card p { font-size: 12px; color: var(--muted); margin: 0; }
+
+    h2 {
+      font-size: 18px; font-weight: 500;
+      color: var(--white);
+      margin: 40px 0 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--gold-border);
+    }
+    h2:first-of-type { margin-top: 0; }
+    p { color: var(--body); font-size: 14px; margin-bottom: 14px; }
+    ul { color: var(--body); font-size: 14px; padding-left: 20px; margin-bottom: 14px; }
+    ul li { margin-bottom: 6px; }
+    .contact-block {
+      background: var(--bg-secondary);
+      border: 1px solid var(--gold-border);
+      border-radius: 10px;
+      padding: 24px;
+      margin-top: 48px;
+      font-size: 14px;
+      color: var(--body);
+    }
+    .contact-block strong { color: var(--white); display: block; margin-bottom: 8px; font-size: 15px; }
+
+    footer {
+      background: var(--bg-footer);
+      border-top: 1px solid var(--gold-border);
+      padding: 28px 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--footer-text);
+    }
+    footer a { color: var(--footer-text); margin: 0 10px; }
+    footer a:hover { color: var(--muted); }
+
+    @media (max-width: 480px) {
+      .warranty-cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="FCF-logo-cropped.png" alt="First Class Filtration">
+    </a>
+    <a href="index.html" class="nav-back">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to home
+    </a>
+  </nav>
+
+  <div class="page-header">
+    <span class="eyebrow">Legal</span>
+    <h1>Warranty Policy</h1>
+    <p class="meta">Last updated: [Insert date] &nbsp;·&nbsp; First Class Filtration Pty Ltd</p>
+  </div>
+
+  <div class="content">
+
+    <div class="notice">
+      <strong>Placeholder document.</strong> This is a template warranty policy based on the product details provided. Please review and update all bracketed fields and confirm coverage details with your supplier before your website goes live.
+    </div>
+
+    <div class="warranty-cards">
+      <div class="warranty-card">
+        <span class="label">External cover</span>
+        <span class="value">Lifetime</span>
+        <p>2mm 316 stainless steel enclosure, 3-part powdercoated finish, and all 316 stainless fixings</p>
+      </div>
+      <div class="warranty-card">
+        <span class="label">Filter housings</span>
+        <span class="value">[X] years + renewable</span>
+        <p>Initial coverage from installation date — renewed by 12 months with each FCF filter change service</p>
+      </div>
+      <div class="warranty-card">
+        <span class="label">Valve train &amp; fittings</span>
+        <span class="value">[X] years</span>
+        <p>Copper and brass valve train, silver-soldered joints, and associated fittings</p>
+      </div>
+      <div class="warranty-card">
+        <span class="label">Installation workmanship</span>
+        <span class="value">[X] years</span>
+        <p>All installation work performed by First Class Filtration technicians</p>
+      </div>
+    </div>
+
+    <h2>1. Overview</h2>
+    <p>First Class Filtration Pty Ltd ("we", "us") stands behind the quality of our systems and our installation work. This Warranty Policy sets out the coverage that applies to products and services provided by us.</p>
+    <p>This warranty is provided in addition to, and does not limit, any rights you may have under the Australian Consumer Law.</p>
+
+    <h2>2. External cover — lifetime warranty</h2>
+    <p>The external stainless steel powdercoated enclosure covering your filtration system is covered by a <strong style="color:var(--white)">lifetime warranty</strong> against:</p>
+    <ul>
+      <li>Structural failure of the cover or backing plate</li>
+      <li>Rust or corrosion arising from the 316 stainless steel construction or fixings</li>
+      <li>Failure of the powdercoat finish under normal Australian outdoor conditions (UV, rain, heat)</li>
+    </ul>
+    <p>This warranty applies to the original installation address and is not transferable unless agreed to in writing by First Class Filtration.</p>
+    <p>The cover is constructed from 2mm 316 stainless steel, with all bolts, washers, anchors, and screws also in 316 stainless. The powder coat is applied via a 3-part process: sandblasted for adhesion profile, primed, then powdercoated in the selected colour.</p>
+
+    <h2>3. Service-linked warranty renewal</h2>
+    <p>First Class Filtration operates on a simple principle: the more you maintain your system with us, the more we stand behind it.</p>
+    <p>Filtration component coverage and installation workmanship warranty are <strong>renewed for a further 12 months</strong> each time your filter cartridges are replaced by a First Class Filtration technician. This means:</p>
+    <ul>
+      <li>A customer who has their filters replaced annually by FCF will have their component warranty perpetually active — it never expires as long as the service relationship continues</li>
+      <li>Coverage is tied to FCF servicing. If filter changes are carried out by a third party or DIY, the 12-month renewal does not apply, though existing coverage does not immediately void</li>
+      <li>The renewal applies from the date of each completed FCF service, not the original installation date</li>
+    </ul>
+    <p>This is our commitment to long-term customers. We build systems to last, and we want to keep them running.</p>
+
+    <h2>4. Filtration system components</h2>
+    <p>The following components are covered against defects in materials and workmanship for a period of <strong style="color:var(--white)">[insert duration]</strong> from the date of installation, renewable through ongoing FCF servicing (see section 3):</p>
+    <ul>
+      <li>Filter housings (both stages)</li>
+      <li>Copper and brass valve train and bypass assembly</li>
+      <li>Silver-soldered brazed joints</li>
+      <li>Associated copper piping and fittings installed by our technicians</li>
+    </ul>
+
+    <h2>5. Installation workmanship</h2>
+    <p>All installation work carried out by First Class Filtration technicians is warranted against defects in workmanship for <strong style="color:var(--white)">[insert duration]</strong> from the date of installation, renewable through ongoing FCF servicing (see section 3).</p>
+
+    <h2>6. Filter cartridges</h2>
+    <p>Filter cartridges are consumable items and are not covered under this warranty. Their service life depends on water quality and household water usage. The FCF app provides usage-based reminders to help you maintain your system. Replacement cartridges are available through the FCF app or by contacting us directly.</p>
+
+    <h2>7. What is not covered</h2>
+    <p>This warranty does not cover:</p>
+    <ul>
+      <li>Damage caused by misuse, neglect, or unauthorised modification of the system</li>
+      <li>Damage caused by events outside our control, including but not limited to flooding, fire, storm, acts of God, or third-party interference</li>
+      <li>Consumable parts, including filter cartridges</li>
+      <li>Work performed by parties other than First Class Filtration technicians</li>
+      <li>Normal wear and tear on any component</li>
+      <li>Aesthetic damage (e.g. scratches or minor marks) that does not affect the function of the product</li>
+      <li>Issues caused by failure to have filter cartridges replaced at recommended intervals</li>
+    </ul>
+
+    <h2>8. How to make a warranty claim</h2>
+    <p>To make a warranty claim, please contact us with the following information:</p>
+    <ul>
+      <li>Your name and installation address</li>
+      <li>Date of original installation</li>
+      <li>Description of the issue</li>
+      <li>Photos of the affected component (if applicable)</li>
+    </ul>
+    <p>We will assess your claim and respond within <strong style="color:var(--white)">[insert timeframe, e.g. 5 business days]</strong>. Where a claim is accepted, we will repair or replace the affected component at our cost, including labour. We may need to inspect the system in person before a determination is made.</p>
+
+    <h2>9. Australian Consumer Law</h2>
+    <p>Our products and services come with guarantees that cannot be excluded under the Australian Consumer Law. You are entitled to a replacement or refund for a major failure and compensation for any other reasonably foreseeable loss or damage. You are also entitled to have the goods repaired or replaced if they fail to be of acceptable quality and the failure does not amount to a major failure.</p>
+    <p>Nothing in this Warranty Policy excludes or limits your rights under the Australian Consumer Law.</p>
+
+    <h2>10. Transferability</h2>
+    <p>The lifetime cover warranty is tied to the original installation address. If the property is sold, warranty coverage [does / does not — choose one] transfer to the new owner. Warranty on other components is not transferable unless agreed to in writing.</p>
+
+    <div class="contact-block">
+      <strong>To make a warranty claim or ask a question</strong>
+      Email: [Insert email address]<br>
+      Phone: [Insert phone number]<br>
+      Address: [Insert business address], South Australia<br>
+      <br>
+      Please include your installation address and date when contacting us about a warranty matter.
+    </div>
+
+  </div>
+
+  <footer>
+    <p style="margin-bottom:10px;">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy">Privacy Policy</a>
+      <a href="terms-of-service">Terms of Service</a>
+      <a href="warranty-policy">Warranty Policy</a>
+    </p>
+    <p>&copy; 2025 First Class Filtration Pty Ltd. All rights reserved. South Australia.</p>
+  </footer>
+
+</body>
+</html>

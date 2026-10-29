@@ -1,0 +1,23 @@
+# Ignore everything by default
+*
+
+# Allow website HTML files
+!.gitignore
+!index.html
+!firstclassfiltration.html
+!privacy-policy.html
+!terms-of-service.html
+!warranty-policy.html
+!blog-adelaide-water-guide.html
+!blog-signs-you-need-better-water.html
+!blog-tap-water-quality.html
+!blog-whole-home-vs-under-sink.html
+!installation-agreement.html
+
+# Allow linked images
+!FCF-logo-cropped.png
+!fcf-steel-2.png
+!sthaust3.png
+!first-class-filtration-unit-monumen-1080.png
+!first-class-filtration-surf-mist-1080.png
+!actualapp.jpg
