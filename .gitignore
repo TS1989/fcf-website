@@ -22,3 +22,7 @@
 !first-class-filtration-surf-mist-1080.png
 !actualapp.jpg
 !*.png
+
+# Allow Folders
+/Materials/
+
